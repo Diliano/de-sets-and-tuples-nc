@@ -109,3 +109,18 @@ def test_tuple_is_it_there():
         (44, 63, 14, 23, 4, 81), 89) == False  # noqa
     assert tuple_is_it_there(
         ("Wait", "I've", "seen", "this", "before", "somewhere"), "Wait") == True  # noqa
+
+
+# Task 8
+# This function takes a multiple arguments and
+# should switch the argument values and return them in a tuple
+# e.g 1, 2 should switch to and return (2, 1)
+
+def tuple_switcheroo(*args):
+    pass
+
+
+def test_tuple_switcheroo():
+    assert tuple_switcheroo(3, 4) == (4, 3)
+    assert tuple_switcheroo(5, 1) == (1, 5)
+    assert tuple_switcheroo(8, 2) == (2, 8)
