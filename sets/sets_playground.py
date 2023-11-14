@@ -20,7 +20,7 @@ def add_set(numbers):
 
 
 def test_add_set():
-    assert add_set([1, 2, 3, 4]) == {1, 2, 3, 4, 1}
+    assert add_set([5, 2, 3, 4]) == {5, 2, 3, 4, 1}
     assert add_set([5, 6, 7, 8]) == {5, 6, 7, 8, 1}
     assert add_set([9, 10, 11, 12]) == {9, 10, 11, 12, 1}
 
@@ -44,8 +44,8 @@ def test_remove_word():
 
 
 # Task 4
-# This function should take a list of words and
-#  should remove and return the word "bug"
+# This function should take a set of words and
+# should remove all elements returning None
 
 
 def remove_all_numbers(numbers):
@@ -53,9 +53,9 @@ def remove_all_numbers(numbers):
 
 
 def test_remove_all_numbers():
-    assert remove_all_numbers(["help", "fix", "my", "bug", "code"]) == None  # noqa
-    assert remove_all_numbers(["I", "bug", "love", "coding"]) == None  # noqa
-    assert remove_all_numbers(["bug", "bugs", "error", "errors"]) == None  # noqa
+    assert remove_all_numbers({"help", "fix", "my", "bug", "code"}) == None  # noqa
+    assert remove_all_numbers({"I", "bug", "love", "coding"}) == None  # noqa
+    assert remove_all_numbers({"bug", "bugs", "error", "errors"}) == None  # noqa
 
 
 # Task 5
@@ -96,7 +96,6 @@ def test_merge_sets():
         "sets", "are", "so", "great"
     }
 
-# sort values (sorted)
 # Task 6
 #  This function should take a set and
 # should return an ordered list in reverse
