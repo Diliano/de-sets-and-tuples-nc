@@ -57,7 +57,7 @@ def remove_all_words(words):
 def test_remove_all_words():
     # Tests that an empty set is returned
     assert remove_all_words({"help", "fix", "my", "bug", "code"}) == set()
-    # Tests that the input set is mutated and returned
+    # Tests that the input set is changed and returned
     input = {"I", "bug", "love", "coding"}
     assert remove_all_words(input) is input
     assert input == set()
