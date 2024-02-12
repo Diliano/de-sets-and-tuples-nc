@@ -1,3 +1,4 @@
+import pytest
 # Task 1
 # This function takes two arguments and
 # should return a tuple containing the arguments
@@ -19,7 +20,7 @@ def test_number_tuple():
 def unpack_tuple(my_tuple):
     pass
 
-
+@pytest.mark.skip()
 def test_unpack_tuple():
     assert unpack_tuple(("Alex", "Windows")) == ["Alex", "Windows"]
     assert unpack_tuple(("Danika", "Linux")) == ["Danika", "Linux"]
@@ -30,11 +31,10 @@ def test_unpack_tuple():
 # This function takes a tuple and
 # should return the number of times the word "three" appears
 
-
 def tuple_appearances(my_tuple):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_appearances():
     assert tuple_appearances((1, 2, 3, 4, 5)) == 0
     assert tuple_appearances(("three", "one", "three", "two", "three",)) == 3
@@ -49,7 +49,7 @@ def test_tuple_appearances():
 def tuple_indexes(my_tuple):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_indexes():
     assert tuple_indexes((1, 6, 5, 2, 5)) == 2
     assert tuple_indexes(("ooh", 78, "strings", 5, "and", "numbers", 4)) == 3
@@ -63,7 +63,7 @@ def test_tuple_indexes():
 def tuple_negative_indexing(my_tuple):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_negative_indexing():
     assert tuple_negative_indexing((1, 6, 5, 2, 5)) == 2
     assert tuple_negative_indexing(
@@ -80,7 +80,7 @@ def test_tuple_negative_indexing():
 def tuple_sections(my_tuple):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_sections():
     assert tuple_sections((1, 6, 5, 2, 5)) == (5, 2, 5)
     assert tuple_sections(
@@ -100,7 +100,7 @@ def test_tuple_sections():
 def tuple_is_it_there(my_tuple, element):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_is_it_there():
     assert tuple_is_it_there((1, 6, 5, 2, 5), 6) == True  # noqa
     assert tuple_is_it_there(
@@ -119,7 +119,7 @@ def test_tuple_is_it_there():
 def tuple_switcheroo(*args):
     pass
 
-
+@pytest.mark.skip()
 def test_tuple_switcheroo():
     assert tuple_switcheroo(3, 4) == (4, 3)
     assert tuple_switcheroo(5, 1) == (1, 5)

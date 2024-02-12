@@ -1,3 +1,4 @@
+import pytest
 #  Task 1
 # This function takes multiple sets and
 # should return a union of the sets
@@ -5,7 +6,6 @@
 
 def sets_union(my_set, your_set):
     pass
-
 
 def test_sets_union():
     assert sets_union({"laptop", "phone", "glasses", "lunch"},
@@ -31,7 +31,7 @@ def test_sets_union():
 def intersect_sets(my_set, your_set):
     pass
 
-
+@pytest.mark.skip()
 def test_intersect_sets():
     assert intersect_sets({"laptop", "phone", "glasses", "lunch"},
                           {"phone", "keys", "wallet", "lunch"}
@@ -52,7 +52,7 @@ def test_intersect_sets():
 def different_sets(my_set, your_set):
     pass
 
-
+@pytest.mark.skip()
 def test_different_sets():
     assert different_sets({"laptop", "phone", "glasses", "lunch"},
                           {"phone", "keys", "wallet", "lunch"}
@@ -72,7 +72,7 @@ def test_different_sets():
 def not_in_both_sets(my_set, your_set):
     pass
 
-
+@pytest.mark.skip()
 def test_not_in_both_sets():
     assert not_in_both_sets({"laptop", "phone", "glasses", "lunch"},
                             {"phone", "keys", "wallet", "lunch"}
