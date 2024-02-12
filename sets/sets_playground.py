@@ -1,10 +1,11 @@
+import pytest
 # Task 1
 # This function should take a list of numbers and
 # return a set of the same numbers
 def create_set(numbers):
     pass
 
-
+@pytest.mark.skip()
 def test_create_set():
     assert create_set([1, 2, 3, 4]) == {1, 2, 3, 4}
     assert create_set([5, 6, 7, 8]) == {5, 6, 7, 8}
@@ -14,11 +15,11 @@ def test_create_set():
 # This function should take a list of numbers and
 # return a set of numbers with the number 1 added
 
-
 def add_set(numbers):
     pass
 
 
+@pytest.mark.skip()
 def test_add_set():
     assert add_set([5, 2, 3, 4]) == {5, 2, 3, 4, 1}
     assert add_set([5, 6, 7, 8]) == {5, 6, 7, 8, 1}
@@ -33,6 +34,7 @@ def remove_word(words):
     pass
 
 
+@pytest.mark.skip()
 def test_remove_word():
     assert remove_word(["hello", "pillow", "world"]) == {"hello", "world"}
     assert remove_word(["I", "love", "pillow", "coding"]) == {
@@ -45,17 +47,20 @@ def test_remove_word():
 
 # Task 4
 # This function should take a set of words and
-# should remove all elements returning None
+# should remove all elements, returning the same set
 
 
-def remove_all_numbers(numbers):
+def remove_all_words(words):
     pass
 
-
-def test_remove_all_numbers():
-    assert remove_all_numbers({"help", "fix", "my", "bug", "code"}) == None  # noqa
-    assert remove_all_numbers({"I", "bug", "love", "coding"}) == None  # noqa
-    assert remove_all_numbers({"bug", "bugs", "error", "errors"}) == None  # noqa
+@pytest.mark.skip()
+def test_remove_all_words():
+    # Tests that an empty set is returned
+    assert remove_all_words({"help", "fix", "my", "bug", "code"}) == set()
+    # Tests that the input set is mutated and returned
+    input = {"I", "bug", "love", "coding"}
+    assert remove_all_words(input) is input
+    assert input == set()
 
 
 # Task 5
@@ -67,6 +72,7 @@ def merge_sets(*args):
     pass
 
 
+@pytest.mark.skip()
 def test_merge_sets():
     assert merge_sets(
         {1, 2, 3, 4, 5},
@@ -104,7 +110,7 @@ def test_merge_sets():
 def reverse_list(my_set):
     pass
 
-
+@pytest.mark.skip()
 def test_reverse_list():
     assert reverse_list({1, 2, 3, 4, 5}) == [5, 4, 3, 2, 1]
     assert reverse_list({"Hello", "world"}) == ["world", "Hello"]
@@ -120,7 +126,7 @@ def test_reverse_list():
 def duplicate_list(your_list):
     pass
 
-
+@pytest.mark.skip()
 def test_duplicate_list():
     assert duplicate_list([1, 1, 2, 3, 3]) == {1, 2, 3}
     assert duplicate_list(["hey", "hiya", "hiya", "hello", "hey"]) == {
