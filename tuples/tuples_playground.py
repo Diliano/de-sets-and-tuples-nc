@@ -35,7 +35,7 @@ def test_tuple_to_list():
 def count_threes(my_tuple):
     """
     This function should return the number of times the word "three" appears
-        in the given tuple 
+        in the given tuple
     """
     pass
 
