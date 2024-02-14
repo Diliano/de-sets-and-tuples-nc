@@ -13,6 +13,7 @@ def check_common_values(set_1, set_2):
     pass
 
 
+@pytest.mark.skip()
 def test_check_common_values():
     assert check_common_values({1, 2, 3}, {2, 3, 4}) is True
     assert check_common_values({"a", "b", "c"}, {"x", "y", "z"}) is False
@@ -60,7 +61,7 @@ def test_check_superset():
 
 
 # Task 4
-def find_the_difference(set_1, set_2):
+def find_set_differences(set_1, set_2):
     """
     This function should take two sets, set_1 and set_2.
 
@@ -71,14 +72,14 @@ def find_the_difference(set_1, set_2):
 
 
 @pytest.mark.skip()
-def test_find_the_difference():
-    assert find_the_difference(
+def test_find_set_differences():
+    assert find_set_differences(
         {"laptop", "phone", "glasses", "lunch"},
         {"phone", "keys", "wallet", "lunch"}
     ) == {"wallet", "laptop", "keys", "glasses"}
-    assert find_the_difference(
+    assert find_set_differences(
         {1, 2, 3, 4, 5}, {5, 6, 7, 1}) == {2, 3, 4, 6, 7}
-    assert find_the_difference(
+    assert find_set_differences(
         {1, 2, 3, "data", 4, 5},
         {"we", 3, "love", 2, "data"}
     ) == {1, 4, 5, "love", "we"}
@@ -93,6 +94,7 @@ def create_union(set_1, set_2):
     pass
 
 
+@pytest.mark.skip()
 def test_create_union():
     assert create_union({"laptop", "phone", "glasses", "lunch"},
                         {"phone", "keys", "wallet", "lunch"}
@@ -119,6 +121,7 @@ def create_intersection(set_1, set_2):
     pass
 
 
+@pytest.mark.skip()
 def test_create_intersection():
     assert create_intersection(
         {"laptop", "phone", "glasses", "lunch"},
