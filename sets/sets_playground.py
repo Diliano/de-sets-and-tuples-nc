@@ -53,7 +53,7 @@ def test_remove_set_element():
 
 
 # Task 4
-def discard_set_element(words):
+def discard_set_element(my_set, value):
     """
     This function should take a set and a value. It should remove the
     specified value from the set and return the original set.
@@ -64,10 +64,10 @@ def discard_set_element(words):
 @pytest.mark.skip()
 def test_discard_set_element():
     assert discard_set_element(
-        {"help", "fix", "my", "code"}, "help") == {"fix", "my", "bug"}
+        {"help", "fix", "my", "code"}, "help") == {"fix", "my", "code"}
 
     input = {"I", "bug", "love", "coding"}
-    assert discard_set_element(input) is input
+    assert discard_set_element(input, "bug") is input
 
 
 # Task 5
