@@ -2,7 +2,7 @@ import pytest
 
 
 # Task 1
-def create_tuple(arg1, arg2):
+def create_tuple(arg_1, arg_2):
     """
     This function takes two arguments and should return a tuple
         containing the arguments
