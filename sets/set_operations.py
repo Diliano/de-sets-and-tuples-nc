@@ -89,7 +89,7 @@ def test_find_set_differences():
 def create_union(set_1, set_2):
     """
     This function should create a *union* of set_1 and set_2. A union will
-    have all the values of of both sets. There will be no duplicates.
+    have all the values of both sets. There will be no duplicates.
     """
     pass
 
@@ -115,8 +115,7 @@ def test_create_union():
 def create_intersection(set_1, set_2):
     """
     This function should create an *intersection* of set_1 and set_2. An
-    intersection will have contain all the values that are present in
-    BOTH sets.
+    intersection will contain all the values that are present in BOTH sets.
     """
     pass
 

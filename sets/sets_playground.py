@@ -20,8 +20,8 @@ def test_create_set():
 # Task 2
 def is_in_set(my_set, element):
     """
-    This function should take a set and and element and return the original set
-    with the given element added
+    This function should take a set and an element and return True if the set
+    contains the element and False otherwise
     """
     pass
 
@@ -35,7 +35,7 @@ def test_is_in_set():
 # Task 3
 def remove_set_element(my_set):
     """
-    This function should take a set, remove an arbitrary element and return
+    This function should take a set, remove any one element from it and return
     the removed element
     """
     pass
