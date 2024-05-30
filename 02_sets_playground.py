@@ -106,6 +106,7 @@ def test_copy_set():
         f"{NORMAL_RED}function should return a copy of the given set{DEFAULT}"
 
 
+# Do not change the code below this line
 if __name__ == "__main__":
     test_create_set()
     test_is_in_set()
